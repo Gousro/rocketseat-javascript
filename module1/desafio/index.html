@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Desafio do Módulo 1</title>
+</head>
+
+<body>
+
+  <script>
+
+    // Exercício 1
+    console.log("[Exercício 1]:");
+    function mostrarInfor() {
+      var endereco = {
+        rua: "Rua dos pinheiros",
+        numero: 1293,
+        bairro: "Centro",
+        cidade: "São Paulo",
+        uf: "SP"
+      };
+
+
+      return "O usuário mora em " + endereco.cidade + " / " + endereco.uf + ", no bairro " + endereco.bairro + ', na rua "' + endereco.rua + '" ' + "com nº " + endereco.numero + ".";
+    }
+
+    console.log(mostrarInfor());
+    console.log("---------------------------------------------");
+
+
+
+    // Exercício 2
+    console.log("[Exercício 2]:");
+    // A àrea comentada nesse exercício é um extra, que fiz para praticar...
+    // var resultado;
+    function pares(x, y) {
+
+      console.log("Números pares entre [" + x + ", " + y + "]: ");
+      for (x = x; x <= y; x++) {
+        if (x % 2 === 0) {
+          console.log(x);
+        }
+      }
+
+      /*
+      if ((x % 2 == 0) && (y % 2 == 0)) {
+        resultado = "x e y são Par";
+      } else if ((x % 2 == 0) && (y % 2 != 0)) {
+        resultado = "x é Par e y é Impar";
+      } else if ((x % 2 != 0) && (y % 2 != 0)) {
+        resultado = "x e y são Impar";
+      } else {
+        resultado = "x é Impar e y é Par"
+      }
+
+      return resultado; */
+
+    }
+    pares(1, 20);
+    //console.log(pares(resultado));
+    console.log("---------------------------------------------");
+
+    // Exercício 3
+    console.log("[Exercício 3]:")
+
+    function temHabilidade(skills) {
+      if (skills.indexOf("Javascript") >= 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    var skills = ["ReactJS", "React Native"];
+
+    console.log(temHabilidade(skills)); // true ou false
+    console.log(temHabilidade([...skills, "Javascript"])); // true ou false
+
+    console.log("---------------------------------------------");
+
+    // Exercício 4
+    console.log("[Exercício 4]:");
+
+    // Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+    function experiencia(anos) {
+      if (anos == 0 || anos == 1) {
+        return 'Iniciante';
+      } else if (anos > 1 && anos <= 3) {
+        return 'Intermediário';
+      } else if (anos >= 4 && anos <= 6) {
+        return 'Avançado';
+      } else if (anos > 7) {
+        return 'Jedi Master';
+      }
+    }
+
+    var anosEstudo = 9;
+    console.log(experiencia(anosEstudo));
+    console.log("---------------------------------------------");
+
+    // Exercício 5
+    console.log("[Exercício 5]:");
+
+    var usuarios = [
+      {
+        nome: "Diego",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+      },
+      {
+        nome: "Gabriel",
+        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+      }
+    ];
+
+    for (var usuario of usuarios) {
+      console.log('O ' + usuario.nome + ' possui as habilidades: ' + usuario.habilidades.join(", "));
+    }
+
+    console.log("---------------------------------------------");
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Curso de JavaScript</title>
+</head>
+
+<body>
+  <script>
+
+    // Variáveis e dados
+    var nome = "Rodrigo";
+    var idade = 26;
+    var peso = 90;
+    var humano = true;
+
+    var alunos = ["Rodrigo", "Gabriel", "Lucas"];
+    var aluno = {
+      nome: alunos[0],
+      idade: 26,
+      peso: 90,
+      humano: true,
+    };
+
+    // console.log(alunos[1]);
+    // console.log(aluno.nome);
+
+    // Operações matemáticas + - * / %
+    var x = 10, y = 9;
+
+    x *= y;
+
+    // console.log(x);
+
+    // Funções
+    function soma(numero1, numero2) {
+      var resultado = numero1 + numero2;
+
+      return resultado;
+    }
+
+    var resultado = soma(1, 2);
+
+    // console.log(resultado);
+
+    // Condicionais
+    function retornaSexo(sexo) {
+      // M, F
+      // Masculino, Feminino
+
+      /* if (sexo === 'M') {
+        return 'Masculino';
+      } else if (sexo === 'F') {
+        return 'Femenino';
+      } else {
+        return 'Outro';
+      } */
+
+      switch (sexo) {
+        case 'M':
+          return 'Masculino';
+        case 'F':
+          return 'Femenino';
+        default:
+          return 'Outro';
+      }
+    }
+
+    var resultado = retornaSexo('M');
+    // console.log(resultado);
+
+    // Operadores lógicos AND ( && ), OR ( || ), NOT ( ! )
+
+    var sexo = 'M', idade = 26;
+
+    var masculino = sexo === 'M';
+    if (sexo === 'M' && idade >= 18) {
+      // console.log('OK');
+      masculino = true;
+    } else {
+      masculino = false;
+    }
+
+    // console.log(masculino);
+
+    // Condição ternária
+    var sexo = 'M';
+
+    /* if (sexo === 'M') {
+      return 'Masculino';
+    } else {
+      return 'Femenino';
+    } */
+
+    // Tem a mesma função da condição a cima mas escrita de maneira diferente. Ou seja, é uma [condição ternária]!
+    var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+    // console.log(retorno);
+
+    // Estruturas de repetição
+    // for, while
+
+    // Recomendado usar o for quando souber o numero de repetição, nesse exemplo, sabemos que vai repetir 100 vezes.
+    //console.log('Repetição usando for: ');
+    for (var i = 0; i <= 100; i++) {
+      // console.log("[" + i + "]");
+    }
+
+    // Recomendando usar o while quando não souber o número de repetição.
+    var j = 0;
+    //console.log('Repetição usando while: ');
+    while (j <= 100) {
+      // console.log("[" + j + "]");
+      j++;
+    }
+
+    // Intervalo e timeout
+    function exibeAlgo() {
+      console.log("Hellow World");
+    }
+
+    setInterval(exibeAlgo, 1000); // Mostra o resultado a cada 1 segundo.
+    setTimeout(exibeAlgo, 5000); // Mostra o resultado depois de 5 segundos.
+
+  </script>
+</body>
+
+</html>
