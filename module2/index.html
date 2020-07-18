@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Curso de Javascript - Módulo 2</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="box"></div>
+  </div>
+
+  <script>
+    /*
+    var inputElement = document.querySelector('input[name=nome]');
+    var btnElement = document.querySelector('button.botao');
+
+    btnElement.onclick = function () {
+      var text = inputElement.value;
+      alert(text);
+    }
+    */
+
+    /*
+    var linkElement = document.createElement('a');
+
+    linkElement.setAttribute('href', 'http://rocketseat.com.br');
+    linkElement.setAttribute('target', '_blank');
+
+    var textElement = document.createTextNode('Acessar site da Rocketseat');
+
+    linkElement.appendChild(textElement);
+
+    var containerElement = document.querySelector('#app');
+    containerElement.appendChild(linkElement);
+
+    var inputElement = document.querySelector('#nome');
+    containerElement.removeChild(inputElement);
+    */
+
+    var boxElement = document.querySelector('.box');
+
+    // Quando não coloco os valores width e height entre aspas, por algum motivo no meu pc, não está mostrando o style da box. 
+    // Por tanto, mudei os valores, acrescentando as aspas e os pixels.
+    boxElement.style.width = '100px';
+    boxElement.style.height = '100px';
+    boxElement.style.backgroundColor = '#f00';
+
+  </script>
+</body>
+
+</html>

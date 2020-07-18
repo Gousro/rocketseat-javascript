@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Módulo 2 - Desafio</title>
+</head>
+
+<body>
+  <div id="app">
+    <button onclick="createBox()">Criar Caixa</button> <br> <br>
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+    <ul id="lista"></ul>
+  </div>
+
+  <script>
+    // Exercício 1
+    function createBox() {
+      var containerElement = document.querySelector('#app'); // Seleciona na DOM o #app
+      var boxElement = document.createElement('div'); // Cria uma DIV
+
+      /* Adiciona um style */
+      boxElement.style.width = '100px';
+      boxElement.style.height = '100px';
+      boxElement.style.backgroundColor = '#f00';
+      boxElement.style.margin = '10px';
+      boxElement.style.transition = '0.5s';
+      /* Fim do style */
+
+      containerElement.appendChild(boxElement); // Coloca a div criada no #app
+
+      // Faz parte do Exercício 2
+      boxElement.addEventListener('mouseover', () => { // Ao passar o mouse na div
+        boxElement.style.backgroundColor = getRandomColor(); // Muda a cor de plano de fundo da div para um cor aleatória
+      });
+
+    }
+
+    // Exercício 2
+    function getRandomColor() { // Função que gera uma color aleatória
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Exercício 3
+    var nomes = ["Diego", "Gabriel", "Lucas"];
+    var lista = document.querySelector('#lista'); // Seleciona na DOM a #lista
+    var item;
+
+    nomes.forEach(nome => {
+      item = document.createElement('li'); // Cria um elemento li
+      item.textContent = nome; // Adiciona em cada elemento li um valor do array 'nomes'
+      lista.appendChild(item); // Gera a lista
+    });
+
+
+    // Exercício 4
+    function adicionar() {
+      var inputElement = document.querySelector('input[name=nome]').value; // Pega o valor do input
+      var item = document.createElement('li'); // Cria um elemento li
+
+      item.textContent = inputElement; // adiciona o valor do input no elemento li
+      lista.appendChild(item); // Atualiza a lista
+
+      document.querySelector('input[name=nome]').value = ""; // Limpa o input
+    }
+
+  </script>
+</body>
+
+</html>
