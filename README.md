@@ -139,9 +139,9 @@ var nomes = ["Diego", "Gabriel", "Lucas"];
 
 Preencha uma lista ```<ul>``` no HTML com os itens da seguinte forma:
 
-● Diego
-● Gabriel
-● Lucas
+ * Diego
+ * Gabriel
+ * Lucas
 
 :four: **Exercício** :pencil:
 
@@ -155,3 +155,7 @@ Seguindo o resultado do exercício anterior adicione um input em tela e um botã
 Ao clicar no botão, a função adicionar() deve ser disparada adicionando um novo item a lista de
 nomes baseado no nome preenchido no input e renderizando o novo item em tela juntos aos
 demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique.
+
+### **Exercícios Módulo 03** - App de ToDos:
+
+Criado aplicativo Todo List no qual armazena os dados na localStorage. Cria e exclui itens na lista de Todo's.
