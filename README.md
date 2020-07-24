@@ -1,21 +1,23 @@
 <h1 align="center">
-    <img alt="Starter" title="Javascript Starter"src=".github/logo.svg" width="200px" />
+    <img alt="Iniciando" title="Iniciando no Javascript"src=".github/logo.svg" width="200px" />
 </h1>
 
 <h3 align="center">
-  JS Rocketseat Challenge Excercises :book:
+  Exercícios javascript de desafio da Rocketseat :book:
 </h3>
 
-<p align="center">This project is just the final exercises of each Rocketseat Javascript course module <a href="https://skylab.rocketseat.com.br/journey/starter">JavaScript Starter</a> 🎓
+<p align="center">Este projeto é apenas os exercícios finais de cada módulo do curso Rocketseat Javascript<a href="https://skylab.rocketseat.com.br/journey/starter">Iniciando no Javascript</a> 🎓
 </p>
 
 <p align="center">
 
-  <a href="#">
+  <a href="https://github.com/Gousro">
     <img alt="Made by Gousro" src="https://img.shields.io/badge/made%20by-Gousro-%2304D361">
   </a>
 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
+  <a href="LICENSE.md">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
+  </a>
 </p>
 
 ### Exercícios Módulo 01 - Introdução JavaScript :point_up:
